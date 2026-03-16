@@ -1,6 +1,7 @@
-const btn = document.getElementById("click");
-const topic = document.getElementById("topic");
+const sketchArea = document.getElementById('sketch-area');
 
-btn.addEventListener("click", () => {
-    topic.textContent = "It's working"
-})
+for (let i =0; i < 256; i++){
+    const square = document.createElement("div");
+    square.classList.add("square");
+    sketchArea.appendChild(square);
+}

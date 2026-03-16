@@ -1,3 +1,34 @@
-h1 {
-    color: blue;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#sketch-area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 502px;
+    height: auto;
+    border: 1px solid black;
+}
+
+.square {
+    width: 31.25px;
+    height: 31.25px;
 }
